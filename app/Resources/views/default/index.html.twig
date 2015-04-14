@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!-- saved from url=(0037)http://ever-after.phpbitsplugins.com/ -->
-<html lang="en-US" style="height: auto;" class="js no-touch csstransitions csstransformspreserve3d wf-robotoslab-n4-active wf-pacifico-n4-active wf-raleway-n4-active wf-active">
+<!-- saved from url=(0035)http://respooonsive.com/ever-after/ -->
+<html lang="en" class=" js no-touch csstransitions csstransformspreserve3d">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
@@ -9,79 +9,60 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="description" content="">
 <meta name="author" content="">
-<link rel="shortcut icon" href="http://ever-after.phpbitsplugins.com/wp-content/themes/Ever-After/images/favicon.ico">
-<title>Giorgiodalila</title>
-<link href="./ever-after.phpbitsplugins.com_files/css" rel="stylesheet" type="text/css">
-<!--<script src="./ever-after.phpbitsplugins.com_files/webfont.js" type="text/javascript" async=""></script>-->
+<link rel="shortcut icon" href="http://respooonsive.com/ever-after/img/favicon.ico">
+<title>{% block title %} giorgiodalila {% endblock %}</title>
+
 {% stylesheets 'bundles/app/css/*' filter='cssrewrite' %}
     <link rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
-{% javascripts 
-	'@AppBundle/Resources/public/js/jquery.js'
-	'@AppBundle/Resources/public/js/*' %}
+<link rel="stylesheet" href="{{ asset('bundles/app/resources/font-awesome-4.3.0/css/font-awesome.min.css') }}">
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+
+<style>
+.opl {
+position:fixed;
+top:100px;
+left:0px;
+z-index:99999;
+}
+.opl a {
+width:73px;
+height:56px;
+text-indent:-9999px;
+display:block;
+background:url('https://s3.amazonaws.com/onepagelove/one-page-love-award-left.png') no-repeat;
+}
+</style>
+
+{% javascripts '@AppBundle/Resources/public/js/modernizr.min.js' %}
     <script src="{{ asset_url }}"></script>
 {% endjavascripts %}
-<script>
-    /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
-    if ( typeof WebFontConfig === "undefined" ) {
-        WebFontConfig = new Object();
-    }
-    WebFontConfig['google'] = {families: ['Roboto+Slab:400', 'Pacifico', 'Raleway']};
-    (function() {
-        var wf = document.createElement( 'script' );
-        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
-        wf.type = 'text/javascript';
-        wf.async = 'true';
-        var s = document.getElementsByTagName( 'script' )[0];
-        s.parentNode.insertBefore( wf, s );
-    })();
-</script>
-<meta name="robots" content="noindex,follow">
-<link rel="stylesheet" id="contact-form-7-css" href="./ever-after.phpbitsplugins.com_files/styles.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-fa-css" href="./ever-after.phpbitsplugins.com_files/font-awesome.min.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-bootstrap-css" href="./ever-after.phpbitsplugins.com_files/bootstrap.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-magnific-popup-css" href="./ever-after.phpbitsplugins.com_files/magnific-popup.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-supersized-css" href="./ever-after.phpbitsplugins.com_files/supersized.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-component-css" href="./ever-after.phpbitsplugins.com_files/component.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-flexslider-css" href="./ever-after.phpbitsplugins.com_files/flexslider.css" type="text/css" media="all">
-<link rel="stylesheet" id="ever-after-css-css" href="./ever-after.phpbitsplugins.com_files/style.css" type="text/css" media="all">
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery-migrate.min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/modernizr.min.js"></script>
-<style>
-body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28px;}p {line-height: 28px;}.row h2{ font-family: 'Pacifico'; }h1, h2, h3, h4, h5, h6{ font-family: 'Raleway'; }
-</style>
-<!-- HTML5 shim IE8 support of HTML5 elements and media queries -->
 <!--[if lt IE 9]>
-      <script src="http://ever-after.phpbitsplugins.com/wp-content/themes/Ever-Afterjs/html5shiv.js"></script>
+      <script src="{{ asset('bundles/app/js/html5shiv.js') }}"></script>
     <![endif]-->
-<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400%7CPacifico%7CRaleway">
 </head>
-<body data-spy="scroll" data-offset="0" data-target="#theMenu" class="home blog">
-<!-- Menu -->
+<body data-spy="scroll" data-offset="0" data-target="#theMenu">
+<div class="opl">
+	<a href="https://onepagelove.com/ever-after" rel="nofollow" target="_blank">Ever After featured on One Page Love</a>
+</div>
 <nav class="menu" id="theMenu">
 <div class="menu-wrap">
-	<h1 class="logo"><a href="./ever-after.phpbitsplugins.com_files/ever-after.phpbitsplugins.com.html">Ever After</a></h1>
-	<!-- <i class=" fa fa-close menu-close close">&times;</i> -->
-	<div class="menu-header">
-		<ul id="menu-menu" class="main-menu">
-			<li id="menu-item-32" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="./ever-after.phpbitsplugins.com_files/ever-after.phpbitsplugins.com.html" class="smoothScroll">Home</a></li>
-			<li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="http://ever-after.phpbitsplugins.com/#story" class="smoothScroll">Our Love Story</a></li>
-			<li id="menu-item-35" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="http://ever-after.phpbitsplugins.com/#gallery" class="smoothScroll">Gallery</a></li>
-			<li id="menu-item-36" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="http://ever-after.phpbitsplugins.com/#events" class="smoothScroll">Events</a></li>
-			<li id="menu-item-37" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home"><a href="http://ever-after.phpbitsplugins.com/#rsvp" class="smoothScroll">RSVP</a></li>
-			<li id="menu-item-781" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://ever-after.phpbitsplugins.com/blog/" class="smoothScroll">Blog</a></li>
-			<li id="menu-item-782" class="menu-item menu-item-type-post_type menu-item-object-page"><a href="http://ever-after.phpbitsplugins.com/about/" class="smoothScroll">Sample Page</a></li>
-		</ul>
-	</div>
-	<a href="http://facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a><a href="http://twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a><a href="http://instagram.com/" target="_blank"><i class="fa fa-instagram"></i></a>
+	<h1 class="logo"><a href="http://respooonsive.com/ever-after/index.html#home">Ever After</a></h1>
+	<a href="http://respooonsive.com/ever-after/#home" class="smoothScroll">Home</a>
+	<a href="http://respooonsive.com/ever-after/#story" class="smoothScroll">Our Love Story</a>
+	<a href="http://respooonsive.com/ever-after/#gallery" class="smoothScroll">Gallery</a>
+	<a href="http://respooonsive.com/ever-after/#events" class="smoothScroll">Events</a>
+	<a href="http://respooonsive.com/ever-after/#rsvp" class="smoothScroll">RSVP</a>
+	<a href="http://respooonsive.com/ever-after/#gifts" class="smoothScroll">Gifts</a>
+	<a href="http://respooonsive.com/ever-after/#"><i class="fa fa-facebook"></i></a>
+	<a href="http://respooonsive.com/ever-after/#"><i class="fa fa-twitter"></i></a>
+	<a href="http://respooonsive.com/ever-after/#"><i class="fa fa-dribbble"></i></a>
+	<a href="http://respooonsive.com/ever-after/#"><i class="fa fa-envelope"></i></a>
 </div>
-<!-- Menu button -->
 <div id="menuToggle">
 	<i class="fa fa-heart"></i>
 </div>
 </nav>
-<!-- ========== HEADER SECTION ========== -->
 <section id="home"></section>
 <div id="headerwrap" class="hero" style="height: 763px;">
 	<div class="container">
@@ -96,39 +77,19 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 			</div>
 		</div>
 	</div>
-	<!-- .container -->
 	<div id="overlay">
 	</div>
-	<!--Background Slider Navigation-->
 	<ul id="slide-list">
 		<li class="slide-link-0"><a></a></li>
 		<li class="slide-link-1 current-slide"><a></a></li>
 		<li class="slide-link-2"><a></a></li>
 	</ul>
-	<!-- Background Slider Holder -->
-	<ul id="supersized" class="quality" style="visibility: visible;">
-		<li class="slide-0 prevslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="./ever-after.phpbitsplugins.com_files/slider-1-1400x950.jpg" style="width: 1376px; left: 0px; top: -96.5px; height: 935.68px;"></a></li>
-		<li class="slide-1 activeslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="./ever-after.phpbitsplugins.com_files/slider-2-1400x950.jpg" style="width: 1376px; left: 0px; top: -96.5px; height: 935.68px;"></a></li>
-		<li class="slide-2" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="./ever-after.phpbitsplugins.com_files/slider-3-1400x950.jpg" style="width: 1376px; height: 935.68px; left: 0px; top: -96px;"></a></li>
+	<ul id="supersized" class="speed" style="visibility: visible;">
+		<li class="slide-0 prevslide" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="{{ asset('bundles/app/img/slider-1.jpg') }}" style="width: 1376px; height: 935.68px; left: 0px; top: -96.5px;"></a></li>
+		<li class="slide-1 activeslide" style="visibility: visible; opacity: 0.998545442695351;"><a target="_blank"><img src="{{ asset('bundles/app/img/slider-2.jpg') }}" style="width: 1376px; left: 0px; top: -96.5px; height: 935.68px;"></a></li>
+		<li class="slide-2" style="visibility: visible; opacity: 1;"><a target="_blank"><img src="{{ asset('bundles/app/img/slider-3.jpg') }}" style="width: 1376px; left: 0px; top: -96px; height: 935.68px;"></a></li>
 	</ul>
 </div>
-<!-- #headerwrap -->
-<!-- ========== WHITE SECTION ========== -->
-<script>
-		jQuery(document).ready(function($){
-			jQuery('#countdown_dashboard').countDown({
-				targetDate: {
-					'day': 		14, // Put the date here
-					'month': 	2, // Month
-					'year': 	2015, // Year
-					'hour': 	0,
-					'min': 		0,
-					'sec': 		0
-				} //,omitWeeks: true
-			});
-		});
-	</script>
-<section id="countdown-timer"></section>
 <div class="white">
 	<div class="container">
 		<div class="row">
@@ -150,10 +111,10 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 					</div>
 					<div class="digit">
 						<div class="top" style="display: none;">
-							0
+							3
 						</div>
 						<div class="bottom" style="display: block;">
-							0
+							3
 						</div>
 					</div>
 					</li>
@@ -169,10 +130,10 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 					</div>
 					<div class="digit">
 						<div class="top" style="display: none;">
-							0
+							2
 						</div>
 						<div class="bottom" style="display: block;">
-							0
+							2
 						</div>
 					</div>
 					</li>
@@ -180,18 +141,18 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 					<span class="dash_title">hours</span>
 					<div class="digit">
 						<div class="top" style="display: none;">
-							0
+							1
 						</div>
 						<div class="bottom" style="display: block;">
-							0
+							1
 						</div>
 					</div>
 					<div class="digit">
 						<div class="top" style="display: none;">
-							0
+							4
 						</div>
 						<div class="bottom" style="display: block;">
-							0
+							4
 						</div>
 					</div>
 					</li>
@@ -207,10 +168,10 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 					</div>
 					<div class="digit">
 						<div class="top" style="display: none;">
-							0
+							4
 						</div>
 						<div class="bottom" style="display: block;">
-							0
+							4
 						</div>
 					</div>
 					</li>
@@ -225,11 +186,11 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 						</div>
 					</div>
 					<div class="digit">
-						<div class="top" style="display: none;">
-							0
+						<div class="top" style="display: block; overflow: hidden; height: 11.7684999169151px; padding-top: 0px; margin-top: 0px; padding-bottom: 0px; margin-bottom: 0px;">
+							4
 						</div>
-						<div class="bottom" style="display: block;">
-							0
+						<div class="bottom" style="display: block; overflow: hidden; height: 87.1204846200239px;">
+							5
 						</div>
 					</div>
 					</li>
@@ -237,36 +198,35 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 			</div>
 		</div>
 	</div>
-	<!-- .container -->
 </div>
-<!-- .white -->
+<section id="story"></section>
 <div class="grey">
 	<div class="container">
 		<div class="row">
 			<ul class="ch-grid row">
-				<li id="">
-				<div class="ch-item ch-img-1" style="background-image: url(http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/groom.jpg)">
+				<li>
+				<div class="ch-item ch-img-1">
 					<div class="ch-info">
 						<h3>James Elric</h3>
 						<p>
-							Groom
+							THE GROOM
 						</p>
 					</div>
 				</div>
 				</li>
 				<li id="mid">
-				<div class="ch-item ch-img-2" style="background-image: url(http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/couple-250x250.jpg)">
+				<div class="ch-item ch-img-2">
 					<div class="ch-info">
 						<h3>Mr. and Mrs. Elric</h3>
 					</div>
 				</div>
 				</li>
-				<li id="">
-				<div class="ch-item ch-img-3" style="background-image: url(http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/bride.jpg)">
+				<li>
+				<div class="ch-item ch-img-3">
 					<div class="ch-info">
 						<h3>Jessie Mendiola</h3>
 						<p>
-							The Bride
+							THE BRIDE
 						</p>
 					</div>
 				</div>
@@ -274,31 +234,26 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 			</ul>
 		</div>
 	</div>
-	<!-- .container -->
 </div>
-<!-- .grey -->
-<!-- ========== Stories - GREY SECTION ========== -->
-<section id="story"></section>
-<!-- ========== WHITE SECTION ========== -->
 <div class="white">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Our Love Story</h2>
+				<h2>Our Love story</h2>
 				<span class="hearts"></span>
 				<div class="row postDetails">
 					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 						<div class="postYear">
-							Aug, 2012
+							Jan, 2011
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea love-story-details">
+					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
 						<div class="arrowpart">
 						</div>
 						<div class="exCon">
 							<h3>First Date</h3>
 							<p>
-								Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+								<span class="dropcap">N</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
 							</p>
 						</div>
 					</div>
@@ -306,16 +261,50 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 				<div class="row postDetails">
 					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 						<div class="postYear">
-							May, 2013
+							Feb, 2011
 						</div>
 					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea love-story-details">
+					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
 						<div class="arrowpart">
 						</div>
 						<div class="exCon">
-							<h3>Second Date</h3>
+							<h3>Second Meeting</h3>
 							<p>
-								Oam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+								<span class="dropcap">O</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row postDetails">
+					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+						<div class="postYear">
+							Mar, 2012
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+						<div class="arrowpart">
+						</div>
+						<div class="exCon">
+							<h3>He played a music for me</h3>
+							<p>
+								<span class="dropcap">W</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="row postDetails">
+					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+						<div class="postYear">
+							April, 2012
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
+						<div class="arrowpart">
+						</div>
+						<div class="exCon">
+							<h3>Our first picture together</h3>
+							<p>
+								<span class="dropcap">S</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
 							</p>
 						</div>
 					</div>
@@ -323,255 +312,247 @@ body{font-family: 'Roboto Slab';font-weight: 400;font-size: 16px;line-height: 28
 			</div>
 		</div>
 	</div>
-	<!-- container -->
 </div>
-<!-- .white -->
 <section id="gallery"></section>
-<!-- ========== Gallery - DARK GREY SECTION ========== -->
 <div class="darkgrey">
 	<section id="photostack" class="photostack photostack-start">
 	<div>
-		<figure style="-webkit-transform: translate(208px, -160px) rotate(-21deg); transform: translate(208px, -160px) rotate(19deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/1s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/1s-240x240.jpg" alt="img0"></a>
+		<figure style="-webkit-transform: translate(528px, 20px) rotate(-31deg); transform: translate(528px, 20px) rotate(28deg);">
+		<a href="http://respooonsive.com/ever-after/images/1.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/1s.jpg') }}" alt="img01"></a>
 		<figcaption>
 		<h2 class="photostack-title">Serenity Beach</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(48px, -160px) rotate(-24deg); transform: translate(48px, -160px) rotate(25deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/2s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/2s-240x240.jpg" alt="img1"></a>
+		<figure style="-webkit-transform: translate(48px, -160px) rotate(-2deg); transform: translate(48px, -160px) rotate(-19deg);">
+		<a href="http://respooonsive.com/ever-after/images/2.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/2s.jpg') }}" alt="img02"></a>
 		<figcaption>
 		<h2 class="photostack-title">Happy Days</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(1168px, 200px) rotate(21deg); transform: translate(1168px, 200px) rotate(30deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/3s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/3s-240x240.jpg" alt="img2"></a>
+		<figure style="-webkit-transform: translate(1168px, -160px) rotate(23deg); transform: translate(1168px, -160px) rotate(-29deg);">
+		<a href="http://respooonsive.com/ever-after/images/3.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/3s.jpg') }}" alt="img03"></a>
 		<figcaption>
 		<h2 class="photostack-title">Beautywood</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(48px, 380px) rotate(31deg); transform: translate(48px, 380px) rotate(-29deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/4s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/4s-240x240.jpg" alt="img3"></a>
+		<figure style="-webkit-transform: translate(368px, 200px) rotate(4deg); transform: translate(368px, 200px) rotate(-3deg);">
+		<a href="http://respooonsive.com/ever-after/images/4.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/4s.jpg') }}" alt="img04"></a>
 		<figcaption>
-		<h2 class="photostack-title">Heaven of Time</h2>
+		<h2 class="photostack-title">Heaven of time</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(528px, 200px) rotate(-15deg); transform: translate(528px, 200px) rotate(-2deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/5s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/5s-240x240.jpg" alt="img4"></a>
+		<figure style="-webkit-transform: translate(528px, 380px) rotate(18deg); transform: translate(528px, 380px) rotate(4deg);">
+		<a href="http://respooonsive.com/ever-after/images/5.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/5s.jpg') }}" alt="img05"></a>
 		<figcaption>
 		<h2 class="photostack-title">Speed Racer</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(1168px, 20px) rotate(34deg); transform: translate(1168px, 20px) rotate(-33deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/6s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/6s-240x240.jpg" alt="img5"></a>
+		<figure style="-webkit-transform: translate(-112px, 20px) rotate(-29deg); transform: translate(-112px, 20px) rotate(-35deg);">
+		<a href="http://respooonsive.com/ever-after/images/6.jpg" class="photostack-img"><img src="{{ asset('bundles/app/img/6s.jpg') }}" alt="img06"></a>
 		<figcaption>
-		<h2 class="photostack-title">Forever This</h2>
+		<h2 class="photostack-title">Forever this</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(-112px, 200px) rotate(6deg); transform: translate(-112px, 200px) rotate(21deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/7s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/7s-240x240.jpg" alt="img6"></a>
+		<figure data-dummy="" style="-webkit-transform: translate(688px, 380px) rotate(-13deg); transform: translate(688px, 380px) rotate(33deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/7s.jpg') }}" alt="img07"></a>
 		<figcaption>
-		<h2 class="photostack-title">Happy</h2>
+		<h2 class="photostack-title">Lovely Green</h2>
 		</figcaption>
 		</figure>
-		<figure style="-webkit-transform: translate(368px, 200px) rotate(-16deg); transform: translate(368px, 200px) rotate(-4deg);">
-		<a href="http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/8s.jpg" class="photostack-img"><img src="./ever-after.phpbitsplugins.com_files/8s-240x240.jpg" alt="img7"></a>
+		<figure data-dummy="" style="-webkit-transform: translate(1008px, -160px) rotate(15deg); transform: translate(1008px, -160px) rotate(34deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/8s.jpg') }}" alt="img08"></a>
 		<figcaption>
-		<h2 class="photostack-title">Ever</h2>
+		<h2 class="photostack-title">Wonderful</h2>
+		</figcaption>
+		</figure>
+		<figure data-dummy="" style="-webkit-transform: translate(848px, 20px) rotate(6deg); transform: translate(848px, 20px) rotate(4deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/9s.jpg') }}" alt="img09"></a>
+		<figcaption>
+		<h2 class="photostack-title">Love Addict</h2>
+		</figcaption>
+		</figure>
+		<figure data-dummy="" style="-webkit-transform: translate(528px, -160px) rotate(22deg); transform: translate(528px, -160px) rotate(3deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/10s.jpg') }}" alt="img10"></a>
+		<figcaption>
+		<h2 class="photostack-title">Friendship</h2>
+		</figcaption>
+		</figure>
+		<figure data-dummy="" style="-webkit-transform: translate(848px, -160px) rotate(1deg); transform: translate(848px, -160px) rotate(-19deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/11s.jpg') }}" alt="img11"></a>
+		<figcaption>
+		<h2 class="photostack-title">White Nights</h2>
+		</figcaption>
+		</figure>
+		<figure data-dummy="" style="-webkit-transform: translate(368px, 380px) rotate(30deg); transform: translate(368px, 380px) rotate(8deg);">
+		<a href="http://respooonsive.com/ever-after/#" class="photostack-img"><img src="{{ asset('bundles/app/img/12s.jpg') }}" alt="img12"></a>
+		<figcaption>
+		<h2 class="photostack-title">Serendipity</h2>
 		</figcaption>
 		</figure>
 	</div>
-	<nav><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></nav></section>
+	<nav><span></span><span></span><span></span><span></span><span></span><span></span></nav></section>
 </div>
 <section id="events"></section>
 <div class="white noPadding">
-	<div class="pattern">
-		<div class="container">
-			<div class="row">
-				<h2>Events</h2>
-				<span class="hearts"></span>
-				<div class="col-md-6 event event-content-block">
-					<h3>Main Ceremony</h3>
-					<div class="grid">
-						<a href="http://maps.google.com/?q=San%20Sebastian%20Parish%20Church" class="featured-img" target="_blank">
-						<figure>
-						<img src="./ever-after.phpbitsplugins.com_files/event-1-550x350.jpg" alt="Main Ceremony">
-						<figcaption>
-						<button>View</button>
-						</figcaption>
-						</figure>
-						</a>
-					</div>
-					<div class="event-meta">
-						<span><i class="fa fa-calendar-o"></i> October 2, 2014</span>
-						<span><i class="fa fa-clock-o"></i> 1:00am - 6:00pm </span>
-						<span><i class="fa fa-building-o"></i> San Sebastian Parish Church</span>
-					</div>
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-					<a href="http://maps.google.com/?q=San%20Sebastian%20Parish%20Church" class="link" target="_blank">View in Google Maps</a>
-					<br>
+	<div class="container">
+		<div class="row">
+			<h2>Events</h2>
+			<span class="hearts"></span>
+			<div class="col-md-6 event">
+				<h3>Main Ceremony</h3>
+				<div class="grid">
+					<a href="http://respooonsive.com/ever-after/#">
+					<figure>
+					<img src="{{ asset('bundles/app/img/event-1.jpg') }}">
+					<figcaption>
+					<button>View</button>
+					</figcaption>
+					</figure>
+					</a>
 				</div>
-				<div class="col-md-6 event event-content-block">
-					<h3>After Party</h3>
-					<div class="grid">
-						<a href="http://maps.google.com/?q=San%20Sebastian%20Parish%20Church" class="featured-img" target="_blank">
-						<figure>
-						<img src="./ever-after.phpbitsplugins.com_files/event-2-550x350.jpg" alt="After Party">
-						<figcaption>
-						<button>View</button>
-						</figcaption>
-						</figure>
-						</a>
-					</div>
-					<div class="event-meta">
-						<span><i class="fa fa-calendar-o"></i> October 10, 2014</span>
-						<span><i class="fa fa-clock-o"></i> 1:00am - 7:00pm </span>
-						<span><i class="fa fa-building-o"></i> San Sebastian Parish Church</span>
-					</div>
-					<p>
-						Some ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-					</p>
-					<a href="http://maps.google.com/?q=San%20Sebastian%20Parish%20Church" class="link" target="_blank">View in Google Maps</a>
-					<br>
+				<div class="event-meta">
+					<span><i class="fa fa-calendar-o"></i> May 5, 2014</span><span><i class="fa fa-clock-o"></i> 3:00pm - 4:00pm</span>
+					<span><i class="fa fa-building-o"></i> San Sebastian Parish Church</span>
 				</div>
-				<div class="clear clearfix">
+				<p class="justify">
+					<span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<a href="http://respooonsive.com/ever-after/#" class="link">View in Google Maps</a>
+				<br>
+			</div>
+			<div class="col-md-6 event">
+				<h3>After Party</h3>
+				<div class="grid">
+					<a href="http://respooonsive.com/ever-after/#">
+					<figure>
+					<img src="{{ asset('bundles/app/img/event-2.jpg') }}">
+					<figcaption>
+					<button>View</button>
+					</figcaption>
+					</figure>
+					</a>
 				</div>
+				<div class="event-meta">
+					<span><i class="fa fa-calendar-o"></i> May 5, 2014</span><span><i class="fa fa-clock-o"></i> 3:00pm - 4:00pm</span>
+					<span><i class="fa fa-building-o"></i> Carribean Resort, Goldenfield</span>
+				</div>
+				<p class="justify">
+					<span class="dropcap">S</span>ome ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+				</p>
+				<a href="http://respooonsive.com/ever-after/#" class="link">View in Google Maps</a>
+				<br>
 			</div>
 		</div>
 	</div>
 </div>
-<style>
-					#rsvpwrap h2{ color: #ffffff; }
-							#rsvpwrap, #rsvpwrap input[type="text"], #rsvpwrap input[type="email"], #rsvpwrap textarea { color: #6f6f6f; }
-</style>
 <section id="rsvp"></section>
-<div id="rsvpwrap" style="background-image: url(http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/rsvp-bg.jpg);">
+<div id="rsvpwrap">
 	<div class="container">
 		<div class="row">
 			<h2 class="amp">Don't Forget to RSVP</h2>
 			<span class="hearts"></span>
-			<div class="col-lg-4 col-lg-offset-4">
-				<div class="wpcf7" id="wpcf7-f31-o1" lang="en-US" dir="ltr">
-					<div class="screen-reader-response">
+			<form name="contact" method="post" action="http://respooonsive.com/ever-after/index.html" class="af-form" id="af-form">
+				<div class="col-lg-4 col-lg-offset-4">
+					<div class="form-group">
+						<input type="text" name="name" id="name" size="30" value="" placeholder="Name" class="text-input form-control">
+						<label class="error" for="name" id="name_error" style="display: none;">Name is required.</label>
 					</div>
-					<form name="" action="http://ever-after.phpbitsplugins.com/#wpcf7-f31-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-						<div style="display: none;">
-							<input type="hidden" name="_wpcf7" value="31">
-							<input type="hidden" name="_wpcf7_version" value="3.9.3">
-							<input type="hidden" name="_wpcf7_locale" value="en_US">
-							<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f31-o1">
-							<input type="hidden" name="_wpnonce" value="f215cab0f7">
-						</div>
-						<div class="form-group">
-							<span class="wpcf7-form-control-wrap name"><input type="text" name="name" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-input form-control" aria-required="true" aria-invalid="false" placeholder="Name"></span>
-						</div>
-						<div class="form-group">
-							<span class="wpcf7-form-control-wrap response"><span class="wpcf7-form-control wpcf7-radio"><span class="wpcf7-list-item first"><input type="radio" name="response" value="Will be there">&nbsp;<span class="wpcf7-list-item-label">Will be there</span></span><span class="wpcf7-list-item last"><input type="radio" name="response" value="Won&#39;t make it">&nbsp;<span class="wpcf7-list-item-label">Won't make it</span></span></span></span>
-						</div>
-						<div class="form-group">
-							<span class="wpcf7-form-control-wrap email-162"><input type="email" name="email-162" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email text-input form-control" aria-required="true" aria-invalid="false" placeholder="Email"></span>
-						</div>
-						<div class="form-group">
-							<strong>Do you require bus service?</strong><br>
-							<span class="wpcf7-form-control-wrap pick-up"><span class="wpcf7-form-control wpcf7-checkbox wpcf7-validates-as-required"><span class="wpcf7-list-item first"><input type="checkbox" name="pick-up[]" value="12.30pm pick up">&nbsp;<span class="wpcf7-list-item-label">12.30pm pick up</span></span><span class="wpcf7-list-item"><input type="checkbox" name="pick-up[]" value="6:30pm pick up">&nbsp;<span class="wpcf7-list-item-label">6:30pm pick up</span></span><span class="wpcf7-list-item last"><input type="checkbox" name="pick-up[]" value="Late night drop off">&nbsp;<span class="wpcf7-list-item-label">Late night drop off</span></span></span></span>
-						</div>
-						<div class="form-group">
-							<span class="wpcf7-form-control-wrap guests"><input type="text" name="guests" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required text-input form-control" aria-required="true" aria-invalid="false" placeholder="No. of guests attending"></span>
-						</div>
-						<div class="form-group">
-							<span class="wpcf7-form-control-wrap message"><textarea name="message" cols="40" rows="10" class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required text-input form-control" id="input-message" aria-required="true" aria-invalid="false" placeholder="Message"></textarea></span>
-						</div>
-						<div class="form-group af-outer af-required">
-							<input type="submit" value="I am attending" class="wpcf7-form-control wpcf7-submit form-button btn btn-primary form-control"><img class="ajax-loader" src="./ever-after.phpbitsplugins.com_files/ajax-loader.gif" alt="Sending ..." style="visibility: hidden;">
-						</div>
-						<div class="wpcf7-response-output wpcf7-display-none">
-						</div>
-					</form>
+					<div class="form-group">
+						<input type="radio" value="Will be there" id="response_accepted" name="response">
+						Will be there <input type="radio" value="Won&#39;t make it" id="response_declined" name="response">
+						Won't make it <label id="response_error" for="response" class="error" style="display: none;">Please select an option</label>
+					</div>
+					<div class="form-group">
+						<input type="text" name="email" id="email" size="30" value="" placeholder="Email" class="text-input form-control">
+						<label class="error" for="email" id="email_error" style="display: none;">Email is required.</label>
+					</div>
+					<div class="form-group">
+						<input type="text" name="guests" id="guests" size="30" value="" placeholder="No. of guests attending" class="text-input form-control">
+						<label class="error" for="guests" id="guests_error" style="display: none;">No. of guests is required.</label>
+					</div>
+					<div class="form-group">
+						<textarea name="message" id="input-message" cols="30" placeholder="Message" class="text-input form-control"></textarea>
+						<label class="error" for="input-message" id="message_error" style="display: none;">Message is required.</label>
+					</div>
+					<div class="form-group af-outer af-required">
+						<input type="submit" name="submit" class="form-button btn btn-primary form-control" id="submit_btn" value="Submit">
+					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
-	<!-- container -->
 </div>
-<!-- /portfoliowrap -->
-<!-- ========== Gifts - GREY SECTION ========== -->
 <section id="gifts"></section>
 <div class="white">
 	<div class="container">
 		<div class="row">
-			<div class="col-lg-6 col-lg-offset-3 content-gift">
-				<h2>Gift Registry:</h2>
+			<div class="col-lg-6 col-lg-offset-3">
+				<h2>Gift Registry</h2>
 				<span class="hearts"></span>
 				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.
+					<span class="dropcap">L</span>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequats.
 				</p>
 				<ul class="list-inline">
+					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
+					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
+					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- ========== Grey SECTION ========== -->
-<section id="quote"></section>
 <div class="grey">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
-				<h2>You know you're in love when you can't fall asleep because reality is finally better than your dreams.</h2>
+				<h2>You know you're in love when you can't fall asleep because reality is finally better than your dreams. </h2>
 				<span>Dr. Seuss</span>
 			</div>
 		</div>
 	</div>
-	<!-- container -->
 </div>
-<!-- .grey -->
 <div id="footer">
 	<div class="container">
 		<div class="row">
 			<div id="copy">
-				<span>Crafted with love by <a href="./ever-after.phpbitsplugins.com_files/ever-after.phpbitsplugins.com.html">Jessie &amp; James</a></span>
+				<span>Crafted with love by <a href="http://themeforest.net/user/portfolio/">falz04</a></span>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- Footer Scripts
-    ================================================== -->
-<script>
-			jQuery(document).ready(function(){
-				if(jQuery('#supersized').length > 0){
-					//Home Background slider
-					jQuery.supersized({	
-					slide_interval          :   3000,		// Length between transitions
-					transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
-					transition_speed		:	700,		// Speed of transition				
-					slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
-					slides 					:  	[			// Slideshow Images
-													{image : 'http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/slider-1-1400x950.jpg'},{image : 'http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/slider-2-1400x950.jpg'},{image : 'http://ever-after.phpbitsplugins.com/wp-content/uploads/2014/10/slider-3-1400x950.jpg'},												]
-					});
-				}
-			});
-		</script>
-<style>
-</style>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.form.min.js"></script>
+{% javascripts
+	'@AppBundle/Resources/public/js/jquery.min.js'
+	'@AppBundle/Resources/public/js/*' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
 <script type="text/javascript">
-/* <![CDATA[ */
-var _wpcf7 = {"loaderUrl":"http:\/\/ever-after.phpbitsplugins.com\/wp-content\/plugins\/contact-form-7\/images\/ajax-loader.gif","sending":"Sending ..."};
-/* ]]> */
+$(document).ready(function () {
+	jQuery.supersized({
+        slide_interval: 3000,
+        transition: 1,
+        transition_speed: 700,
+        slide_links: 'blank',
+        slides: [{
+            image: "{{ asset('bundles/app/img/slider-1.jpg') }}"
+        }, {
+            image: "{{ asset('bundles/app/img/slider-2.jpg') }}"
+        }, {
+            image: "{{ asset('bundles/app/img/slider-3.jpg') }}"
+        }]
+    });
+});
 </script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/scripts.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/comment-reply.min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.lwtCountdown-1.0.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/bootstrap.min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/smoothscroll.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.smooth-scroll.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/supersized.3.2.7.min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/classie.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/photostack.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/jquery.flexslider-min.js"></script>
-<script type="text/javascript" src="./ever-after.phpbitsplugins.com_files/main.js"></script>
+<!-- <script src="./Ever After - Responsive Wedding Invite Template_files/jquery.min.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.lwtCountdown-1.0.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/bootstrap.min.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/smoothscroll.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.smooth-scroll.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.magnific-popup.min.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/supersized.3.2.7.min.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/classie.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/ajax-mail.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/photostack.js"></script>
+<script src="./Ever After - Responsive Wedding Invite Template_files/main.js"></script> -->
 <ul id="supersized">
 </ul>
 </body>

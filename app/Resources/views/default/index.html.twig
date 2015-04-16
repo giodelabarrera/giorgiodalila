@@ -13,7 +13,7 @@
 <title>{% block title %} giorgiodalila {% endblock %}</title>
 
 {% stylesheets 'bundles/app/css/*' filter='cssrewrite' %}
-    <link rel="stylesheet" href="{{ asset_url }}" />
+    <link type="text/css" rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 <link rel="stylesheet" href="{{ asset('bundles/app/resources/font-awesome-4.3.0/css/font-awesome.min.css') }}">
 <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Slab:400,700">

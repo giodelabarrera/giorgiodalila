@@ -94,3 +94,9 @@ background: #2ECCFA;
 #menuToggle {
 background: #C3EAF2;
 }
+.ch-info {
+background: rgba(46, 204, 250, 0.8);
+}
+.menu h1.logo a:hover {
+color: #7b7b7b;
+}

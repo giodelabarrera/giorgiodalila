@@ -12,7 +12,10 @@
 <link rel="shortcut icon" href="http://respooonsive.com/ever-after/img/favicon.ico">
 <title>{% block title %} giorgiodalila {% endblock %}</title>
 
-{% stylesheets 'bundles/app/css/*' filter='cssrewrite' %}
+{% stylesheets
+	'bundles/app/css/*'
+	'bundles/app/css/giorgiodalila.css'
+	filter='cssrewrite' %}
     <link type="text/css" rel="stylesheet" href="{{ asset_url }}" />
 {% endstylesheets %}
 <link rel="stylesheet" href="{{ asset('bundles/app/resources/font-awesome-4.3.0/css/font-awesome.min.css') }}">

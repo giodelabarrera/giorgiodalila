@@ -48,3 +48,49 @@
   src: local('Pacifico Regular'), local('Pacifico-Regular'), url(http://fonts.gstatic.com/s/pacifico/v7/Q_Z9mv4hySLTMoMjnk_rCfesZW2xOQ-xsNqO47m55DA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+
+
+/*
+fondo
+#E7FAFE
+
+fuente color
+#2ECCFA
+
+cuadrado corazon menu
+#C3EAF2
+
+fondo galeria imagenes
+#DBE6E9
+*/
+
+
+/* override by gio */
+
+.row h2 {
+color: #2ECCFA;
+}
+.postYear {
+background: #2ECCFA;
+}
+a {
+color: #2ECCFA;
+}
+.grey {
+background: #E7FAFE;
+}
+.exCon {
+background: #E7FAFE;
+}
+.photostack {
+background: #DBE6E9;
+}
+.photostack nav span.current {
+background: #2ECCFA;
+}
+.menu-wrap {
+background: #2ECCFA;
+}
+#menuToggle {
+background: #C3EAF2;
+}

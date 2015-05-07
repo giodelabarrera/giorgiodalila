@@ -3,10 +3,10 @@
     $(document).ready(function () {
         jQuery('#countdown_dashboard').countDown({
             targetDate: {
-                'day': 7,
-                'month': 5,
+                'day': 27,
+                'month': 9,
                 'year': 2015,
-                'hour': 0,
+                'hour': 11,
                 'min': 0,
                 'sec': 0
             }

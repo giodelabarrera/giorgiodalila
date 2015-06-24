@@ -18,7 +18,7 @@
 .photostack nav span.flippable::after{opacity:1;-webkit-transition-delay:0.4s;transition-delay:0.4s;}
 .js .photostack::before{content:'';position:absolute;width:100%;height:100%;background:rgba(0,0,0,0.5);top:0;left:0;z-index:100;-webkit-transition:opacity 0.3s, visibility 0s 0.3s;transition:opacity 0.3s, visibility 0s 0.3s;}
 .js .photostack-start::before{-webkit-transition:opacity 0.3s;transition:opacity 0.3s;}
-.js .photostack::after{content:'View Gallery';font-weight:400;position:absolute;border:3px solid #fff;text-align:center;white-space:nowrap;left:50%;top:50%;-webkit-transform:translateY(-50%) translateX(-50%);transform:translateY(-50%) translateX(-50%);padding:10px 20px;color:#fff;text-transform:uppercase;letter-spacing:1px;cursor:pointer;z-index:101;}
+.js .photostack::after{content:'Ver Galeria';font-weight:400;position:absolute;border:3px solid #fff;text-align:center;white-space:nowrap;left:50%;top:50%;-webkit-transform:translateY(-50%) translateX(-50%);transform:translateY(-50%) translateX(-50%);padding:10px 20px;color:#fff;text-transform:uppercase;letter-spacing:1px;cursor:pointer;z-index:101;}
 .js .photostack::before,
 .js .photostack::after{opacity:0;visibility:hidden;}
 .js .photostack-start::before,

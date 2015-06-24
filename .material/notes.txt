@@ -22,9 +22,15 @@ sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio
 
 # Limpia cache prod
 
+-- Linux
 sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio:www-data app/cache/; sudo chown -R giorgio:www-data app/logs/
 sudo php app/console cache:clear --env=prod
 sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio:www-data app/cache/; sudo chown -R giorgio:www-data app/logs/
+
+-- Mac OS X
+sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio:www app/cache/; sudo chown -R giorgio:www app/logs/
+sudo php app/console cache:clear --env=prod
+sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio:www app/cache/; sudo chown -R giorgio:www app/logs/
 
 
 # Assets

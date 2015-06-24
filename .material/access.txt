@@ -1,0 +1,65 @@
+
+FTP
+------------------
+
+ftp.giorgiodalila.es
+> Usuario (login):       giorgiodcu
+> Contraseña (password): hMpMe5ZEE8Ub
+
+Si necesita ayuda para publicar su sitio en internet, consulte nuestra guía:
+http://guias.ovh.es/PonerMiSitioEnLinea/
+
+También ponemos a su disposición un cliente FTP web:
+http://guias.ovh.es/Net2Ftp
+
+
+CORREO ELECTRÓNICO
+------------------
+
+Para acceder a su correo desde un cliente de correo electrónico (Outlook,
+Thunderbird...), necesitará los siguientes datos:
+
+> Servidor POP/IMAP:  pop3.giorgiodalila.es o ns0.ovh.net (puerto 110)
+> Servidor SMTP:      smtp.giorgiodalila.es o ns0.ovh.net (puerto 587 en lugar de 25)
+
+Para utilizar el servidor de correo seguro (SSL), deberá realizar los
+siguientes cambios:
+
+> Servidor POP/IMAP:  ssl0.ovh.net (puerto 995 en lugar de 110)
+> Servidor SMTP:      ssl0.ovh.net (puerto 465 en lugar de 25)
+
+Los identificadores para utilizar cada cuenta de correo son los siguientes:
+
+> Usuario (login):       cuenta@giorgiodalila.es (sustituya «cuenta» por la cuenta
+                         existente que vaya a utilizar)
+> Contraseña (password): la contraseña que haya indicado al crear la cuenta
+
+Para configurar su cliente de correo, puede seguir esta guía:
+http://guias.ovh.es/ConfigProgramaMensajeria/
+
+WEBMAIL: Un webmail permite consultar o enviar correo desde cualquier
+dispositivo conectado a internet. Para acceder a él, introduzca su dirección
+de correo electrónico (cuenta POP) y su contraseña:
+http://webmail.ovh.net/es/
+
+
+SER CLIENTE DE OVH
+------------------
+
+- Área de cliente
+
+Para gestionar sus dominios, alojamientos, bases de datos, accesos FTP o
+para visualizar sus estadísticas, entre otras cosas, acceda a su área de
+cliente:
+https://www.ovh.es/managerv3
+
+- Guías
+
+Le ofrecemos un conjunto de guías para ayudarle a administrar sus servicios:
+http://guias.ovh.es/
+
+- Foro
+
+En nuestro foro podrá informarse sobre las últimas novedades e intercambiar
+experiencias y opiniones con nuestro equipo y con otros clientes:
+http://www.ovh.es//soporte/ayuda/comunidad.xml

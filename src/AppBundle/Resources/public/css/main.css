@@ -247,7 +247,7 @@ padding:0;
 	vertical-align: middle; 
 	text-align: left;
 	width: 25px;
-	font-size: 14px;
+	/*font-size: 14px;*/
 	line-height: 40px;
 	margin: 25px 2px;
 }
@@ -498,15 +498,15 @@ width:250px;
 
 /* This is where you change the path of the images for the couple */
 .ch-img-1 { 
-	background-image: url(../img/groom.jpg);
+	background-image: url(../img/DPP_0193.small.jpg);
 }
 
 .ch-img-2 { 
-	background-image: url(../img/couple.jpg);
+	background-image: url(../img/DPP_0125.small.JPG);
 }
 
 .ch-img-3 { 
-	background-image: url(../img/bride.jpg);
+	background-image: url(../img/DPP_0191.small.JPG);
 }
 
 .ch-info {

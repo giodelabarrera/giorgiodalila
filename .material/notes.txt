@@ -35,7 +35,7 @@ sudo chmod -R 777 app/cache/; sudo chmod -R 777 app/logs/; sudo chown -R giorgio
 
 # Assets
 
-php app/console assets:install --symlink
+sudo php app/console assets:install --symlink
 
 
 # Assetic para producción

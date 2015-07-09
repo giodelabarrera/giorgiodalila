@@ -113,6 +113,36 @@ padding: 10px 0;
 #footer i, #footer a, #footer span {
 color: #fff
 }
+.evento-img img {
+width: 100%;
+}
+#rsvpwrap {
+  min-height: initial!important;
+}
+#rsvpwrap i {
+  
+  color: #2ECCFA;
+}
+#rsvpwrap i.gd-circle-icon {
+  color: #fff;
+}
+#rsvpwrap .container {
+  margin-top: 90px;
+  margin-bottom: 90px;
+}
+#rsvpwrap .container a {
+  color: #fff;
+}
+#rsvpwrap .container a:hover {
+  color: #2ECCFA;
+}
+#rsvpwrap .container .fa-stack a:hover i {color: #fff;}
+#rsvpwrap .container .fa-stack a:hover i.gd-circle-icon{color: #2ECCFA;}
+.gd-download-invitation{
+  margin-bottom: 50px;
+}
+
+
 
 
 

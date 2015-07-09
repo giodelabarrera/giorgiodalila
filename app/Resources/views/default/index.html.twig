@@ -10,7 +10,7 @@
 <meta name="description" content="{% block description %}Giorgio y Dalila es nuestro espacio web en donde damos información relacionada con un día muy especial para nosotros, nuestra boda.{% endblock %}">
 <meta name="keywords" content="giorgio,dalila,giorgio de la barrera,dalila taborda,septiembre 2015">
 <meta name="author" content="Giorgio de la Barrera">
-<link rel="shortcut icon" href="http://respooonsive.com/ever-after/img/favicon.ico">
+<link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 <title>{% block title %}Giorgio y Dalila{% endblock %}</title>
 
 <link rel="stylesheet" href="{{ asset('bundles/app/resources/font-awesome-4.3.0/css/font-awesome.min.css') }}">
@@ -31,17 +31,11 @@
 <nav class="menu" id="theMenu">
 <div class="menu-wrap">
 	<h1 class="logo"><a href="http://respooonsive.com/ever-after/index.html#home">giorgio&dalila</a></h1>
-	<a href="{{ path('homepage') }}#home" class="smoothScroll">Home</a>
-	<a href="{{ path('homepage') }}#appreciations" class="smoothScroll">Agradecimientos</a>
-	<!-- <a href="{{ path('homepage') }}#story" class="smoothScroll">Our Love Story</a> -->
-	<a href="{{ path('homepage') }}#gallery" class="smoothScroll">Galeria</a>
-	<a href="{{ path('homepage') }}#events" class="smoothScroll">Eventos</a>
-	<a href="{{ path('homepage') }}#rsvp" class="smoothScroll">RSVP</a>
-	<a href="https://instagram.com/explore/tags/se%C3%B1oryse%C3%B1oradelabarrera/"><i class="fa fa-instagram fa-2x"></i></a>
-	<!-- <a href="http://respooonsive.com/ever-after/#"><i class="fa fa-facebook"></i></a> -->
-	<!-- <a href="http://respooonsive.com/ever-after/#"><i class="fa fa-twitter"></i></a> -->
-	<!-- <a href="http://respooonsive.com/ever-after/#"><i class="fa fa-dribbble"></i></a>
-	<a href="http://respooonsive.com/ever-after/#"><i class="fa fa-envelope"></i></a> -->
+	<a href="{{ path('homepage') }}#inicio" class="smoothScroll">Inicio</a>
+	<a href="{{ path('homepage') }}#agradecimientos" class="smoothScroll">Agradecimientos</a>
+	<a href="{{ path('homepage') }}#galeria" class="smoothScroll">Galeria</a>
+	<a href="{{ path('homepage') }}#eventos" class="smoothScroll">Eventos</a>
+	<a href="{{ path('homepage') }}#social" class="smoothScroll">Social</a>
 </div>
 <div id="menuToggle">
 	<i class="fa fa-heart"></i>
@@ -52,7 +46,6 @@
 	<div class="container">
 		<br>
 		<h1>Giorgio <span class="amp">&amp;</span> Dalila</h1>
-		<!-- <h2 class="amp">are getting married!</h2> -->
 		<h2 class="amp">26/09/15</h2>
 		<div class="row">
 			<br/><br/><br/><div class="col-lg-6 col-lg-offset-3"></div>
@@ -141,7 +134,7 @@
 		</div>
 	</div>
 </div>
-<section id="appreciations"></section>
+<section id="agradecimientos"></section>
 <div class="white">
 	<div class="container">
 		<div class="row">
@@ -151,16 +144,11 @@
 				<p>
 					<span class="dropcap">Q</span>ueremos agradeceros a cada uno de vosotros por formar parte de nuestra vida compartiendo momentos con nosotros y ayudarnos a poder dar los pasos para poder disfrutar de este día tan especial.
 				</p>
-				<!-- <ul class="list-inline">
-					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
-					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
-					<li><a href="http://respooonsive.com/ever-after/#"><img src="{{ asset('bundles/app/img/envato1.png') }}" alt="test"></a></li>
-				</ul> -->
 			</div>
 		</div>
 	</div>
 </div>
-<section id="gallery"></section>
+<section id="galeria"></section>
 <div class="darkgrey">
 	<section id="photostack" class="photostack photostack-start">
 	<div>
@@ -257,79 +245,32 @@
 	</div>
 	<nav><span></span><span></span><span></span><span></span><span></span><span></span></nav></section>
 </div>
-<!-- <section id="events"></section>
-<div class="white noPadding">
-	<div class="container">
-		<div class="row">
-			<h2>Eventos</h2>
-			<span class="hearts"></span>
-			<div class="col-md-6 event">
-				<h3>Ceremonia</h3>
-				<div class="grid">
-					<a href="https://goo.gl/maps/FkWhG" target="_blank">
-					<figure>
-					<img src="{{ asset('bundles/app/img/castell_rubi.jpg') }}">
-					<figcaption>
-					<button>Ver</button>
-					</figcaption>
-					</figure>
-					</a>
-				</div>
-				<div class="event-meta">
-					<span><i class="fa fa-calendar-o"></i> 26 Sep, 2015</span><span><i class="fa fa-clock-o"></i> 11:00 - 12:00</span>
-					<span><i class="fa fa-building-o"></i> Castillo de Rubí</span>
-				</div>
-				<p class="justify">
-					<span class="dropcap">P</span>atrimonio más significativo de la ciudad, se encuentra en la parte poniente de Rubí sobre una colina que domina la población orientado de norte a sur con la antigua puerta en la pared sur, ha sufrido diferentes modificaciones y transformaciones a lo largo de los años.
-				</p>
-				<a href="https://goo.gl/maps/FkWhG" class="link">Ver en Google Maps</a>
-				<br>
-			</div>
-			<div class="col-md-6 event">
-				<h3>After Party</h3>
-				<div class="grid">
-					<a href="http://respooonsive.com/ever-after/#">
-					<figure>
-					<img src="{{ asset('bundles/app/img/event-2.jpg') }}">
-					<figcaption>
-					<button>View</button>
-					</figcaption>
-					</figure>
-					</a>
-				</div>
-				<div class="event-meta">
-					<span><i class="fa fa-calendar-o"></i> 26 Sep, 2015</span><span><i class="fa fa-clock-o"></i> 14:30 - 22:00</span>
-					<span><i class="fa fa-building-o"></i> Salón de eventos, Terrassa</span>
-				</div>
-				<p class="justify">
-					<span class="dropcap">S</span>ome ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-				</p>
-				<a href="http://respooonsive.com/ever-after/#" class="link">Ver en Google Maps</a>
-				<br>
-			</div>
-		</div>
-	</div>
-</div> -->
-<section id="events"></section>
+<section id="eventos"></section>
 <div class="white">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<h2>Eventos</h2>
 				<span class="hearts"></span>
+				<div class="col-md-6 gd-download-invitation">
+					<a target="_blank" href="{{ asset('bundles/app/img/anverso.jpg') }}">Descargar invitación - exterior</a>
+				</div>
+				<div class="col-md-6 gd-download-invitation">
+					<a target="_blank" href="{{ asset('bundles/app/img/reverso.jpg') }}">Descargar invitación - interior</a>
+				</div>
 				<div class="row postDetails">
 					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 						<div class="postYear">
-							Jan, 2011 11:00
+							11:00
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
 						<div class="arrowpart">
 						</div>
 						<div class="exCon">
-							<h3>First Date</h3>
+							<h3>Castillo de Rubí</h3>
 							<p>
-								<span class="dropcap">N</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+								<a target="_blank" href="https://goo.gl/maps/wGJqb">Ver en Google Maps</a>
 							</p>
 						</div>
 					</div>
@@ -337,16 +278,16 @@
 				<div class="row postDetails">
 					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 						<div class="postYear">
-							Feb, 2011
+							12:00
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
 						<div class="arrowpart">
 						</div>
 						<div class="exCon">
-							<h3>Second Meeting</h3>
+							<h3>Salón del Reino</h3>
 							<p>
-								<span class="dropcap">O</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+								<a target="_blank" href="https://goo.gl/maps/Z4tlx">Ver en Google Maps</a>
 							</p>
 						</div>
 					</div>
@@ -354,33 +295,16 @@
 				<div class="row postDetails">
 					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
 						<div class="postYear">
-							Mar, 2012
+							14:00
 						</div>
 					</div>
 					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
 						<div class="arrowpart">
 						</div>
 						<div class="exCon">
-							<h3>He played a music for me</h3>
+							<h3>Salón de fiestas Terrassa</h3>
 							<p>
-								<span class="dropcap">W</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row postDetails">
-					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-						<div class="postYear">
-							April, 2012
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
-						<div class="arrowpart">
-						</div>
-						<div class="exCon">
-							<h3>Our first picture together</h3>
-							<p>
-								<span class="dropcap">S</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+								<a target="_blank" href="https://goo.gl/maps/fxUAw">Ver en Google Maps</a>
 							</p>
 						</div>
 					</div>
@@ -389,121 +313,22 @@
 		</div>
 	</div>
 </div>
-<section id="rsvp"></section>
+<section id="social"></section>
 <div id="rsvpwrap">
 	<div class="container">
 		<div class="row">
-			<h2 class="amp">Don't Forget to RSVP</h2>
-			<span class="hearts"></span>
-			<form name="contact" method="post" action="http://respooonsive.com/ever-after/index.html" class="af-form" id="af-form">
-				<div class="col-lg-4 col-lg-offset-4">
-					<div class="form-group">
-						<input type="text" name="name" id="name" size="30" value="" placeholder="Name" class="text-input form-control">
-						<label class="error" for="name" id="name_error" style="display: none;">Name is required.</label>
-					</div>
-					<div class="form-group">
-						<input type="radio" value="Will be there" id="response_accepted" name="response">
-						Will be there <input type="radio" value="Won&#39;t make it" id="response_declined" name="response">
-						Won't make it <label id="response_error" for="response" class="error" style="display: none;">Please select an option</label>
-					</div>
-					<div class="form-group">
-						<input type="text" name="email" id="email" size="30" value="" placeholder="Email" class="text-input form-control">
-						<label class="error" for="email" id="email_error" style="display: none;">Email is required.</label>
-					</div>
-					<div class="form-group">
-						<input type="text" name="guests" id="guests" size="30" value="" placeholder="No. of guests attending" class="text-input form-control">
-						<label class="error" for="guests" id="guests_error" style="display: none;">No. of guests is required.</label>
-					</div>
-					<div class="form-group">
-						<textarea name="message" id="input-message" cols="30" placeholder="Message" class="text-input form-control"></textarea>
-						<label class="error" for="input-message" id="message_error" style="display: none;">Message is required.</label>
-					</div>
-					<div class="form-group af-outer af-required">
-						<input type="submit" name="submit" class="form-button btn btn-primary form-control" id="submit_btn" value="Submit">
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div>
-<!-- <div class="white">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2">
-				<h2>Our Love story</h2>
-				<span class="hearts"></span>
-				<div class="row postDetails">
-					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-						<div class="postYear">
-							Jan, 2011
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
-						<div class="arrowpart">
-						</div>
-						<div class="exCon">
-							<h3>First Date</h3>
-							<p>
-								<span class="dropcap">N</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row postDetails">
-					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-						<div class="postYear">
-							Feb, 2011
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
-						<div class="arrowpart">
-						</div>
-						<div class="exCon">
-							<h3>Second Meeting</h3>
-							<p>
-								<span class="dropcap">O</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row postDetails">
-					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-						<div class="postYear">
-							Mar, 2012
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
-						<div class="arrowpart">
-						</div>
-						<div class="exCon">
-							<h3>He played a music for me</h3>
-							<p>
-								<span class="dropcap">W</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="row postDetails">
-					<div class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
-						<div class="postYear">
-							April, 2012
-						</div>
-					</div>
-					<div class="col-xs-12 col-sm-9 col-md-10 col-lg-10 rightArea">
-						<div class="arrowpart">
-						</div>
-						<div class="exCon">
-							<h3>Our first picture together</h3>
-							<p>
-								<span class="dropcap">S</span>am liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quom placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui faorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
-							</p>
-						</div>
-					</div>
-				</div>
+			<div class="col-md-12">
+				<span class="fa-stack fa-4x">
+					<a href="https://instagram.com/explore/tags/se%C3%B1oryse%C3%B1oradelabarrera/" target="_blank">
+						<i class="fa fa-circle fa-stack-2x gd-circle-icon"></i>
+						<i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+					</a>
+				</span>
+				<h2><a href="https://instagram.com/explore/tags/se%C3%B1oryse%C3%B1oradelabarrera/" target="_blank">#señoryseñoradelabarrera</a></h2>
 			</div>
 		</div>
 	</div>
-</div> -->
+</div>
 <div class="grey">
 	<div class="container">
 		<div class="row">
@@ -514,23 +339,13 @@
 		</div>
 	</div>
 </div>
-<!-- <div id="footer">
-	<div class="container">
-		<div class="row">
-			<div id="copy">
-				<div class="col-md-6">.col-md-6</div>
-				<div class="col-md-6">.col-md-6</div>
-			</div>
-		</div>
-	</div>
-</div> -->
 <div id="footer">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-6">
+			<div class="col-xs-12 text-center">
 				<span>Giorgio & Dalila</span>
 			</div>
-			<div class="col-md-6 text-right">
+			<div class="col-xs-12 text-center">
 				<a href="https://instagram.com/explore/tags/se%C3%B1oryse%C3%B1oradelabarrera/"><i class="fa fa-instagram fa-lg"></i> #señoryseñoradelabarrera</a>
 			</div>
 		</div>
@@ -558,18 +373,5 @@ $(document).ready(function () {
     });
 });
 </script>
-<!-- <script src="./Ever After - Responsive Wedding Invite Template_files/jquery.min.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.lwtCountdown-1.0.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/bootstrap.min.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/smoothscroll.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.smooth-scroll.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/jquery.magnific-popup.min.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/supersized.3.2.7.min.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/classie.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/ajax-mail.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/photostack.js"></script>
-<script src="./Ever After - Responsive Wedding Invite Template_files/main.js"></script> -->
-<!-- <ul id="supersized">
-</ul> -->
 </body>
 </html>
